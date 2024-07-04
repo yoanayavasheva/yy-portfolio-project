@@ -1,34 +1,72 @@
+:root {
+  --primary-color: rgb(255, 242, 244);
+  --secondary-color: rgb(69, 143, 157);
+  --default-font-family: "Poppins";
+  --header-font-family: "Lora";
+}
+
 body {
-  background-color: rgb(255, 223, 229);
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+h1,
+h3 {
+  font-family: var(--header-font-family);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 90px;
+  font-style: italic;
+  line-height: 90px;
 }
 
 h2 {
-  font-family: "Poppins";
   font-weight: 500;
   font-style: normal;
 }
 
-h1 {
-  font-family: "Lora";
-  font-weight: 400;
-  font-size: 90px;
-  font-style: italic;
-}
-
 h3 {
-  font-family: "Lora";
   font-weight: 400;
   font-style: italic;
 }
 
 p {
-  font-family: "Poppins";
   font-weight: 600;
   font-size: 16px;
-  max-width: 400px;
-  text-align: start;
 }
 
 h2.homepage-regard {
-  font-size: 40px;
+  font-size: 35px;
+}
+
+div.hero {
+  background-color: var(--primary-color);
+  padding: 150px 10px 105px;
+}
+
+.primary-link {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.primary-link:hover {
+  background-color: rgb(48, 97, 107);
+  transition: 0.4s ease-in-out;
+}
+
+div.link {
+  display: flex;
+  justify-content: center;
 }
