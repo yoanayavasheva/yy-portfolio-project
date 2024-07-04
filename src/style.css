@@ -1,10 +1,8 @@
 body {
   background-color: rgb(255, 223, 229);
-  display: block;
-  text-align: center;
 }
-h2,
-h3 {
+
+h2 {
   font-family: "Poppins";
   font-weight: 500;
   font-style: normal;
@@ -12,14 +10,25 @@ h3 {
 
 h1 {
   font-family: "Lora";
-  font-weight: 500;
+  font-weight: 400;
   font-size: 90px;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: italic;
 }
 
 p {
-  font-family: "Lora";
-  font-weight: 400;
+  font-family: "Poppins";
+  font-weight: 600;
   font-size: 16px;
   max-width: 400px;
   text-align: start;
+}
+
+h2.homepage-regard {
+  font-size: 40px;
 }
