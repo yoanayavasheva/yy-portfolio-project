@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(255, 223, 229);
+  display: block;
+  text-align: center;
+}
+h2,
+h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Lora";
+  font-weight: 500;
+  font-size: 90px;
+}
+
+p {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 400px;
+  text-align: start;
+}
