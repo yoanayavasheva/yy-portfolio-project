@@ -2,6 +2,7 @@
   --background-color: rgb(255, 242, 244);
 
   --primary-color: rgb(69, 143, 157);
+  --primary-color-light: rgb(185, 229, 238);
   --primary-color-dark: rgb(48, 97, 107);
 
   --secondary-color: #e68379;
@@ -82,7 +83,15 @@ h2.section-title {
   font-weight: 600;
 }
 
-div.hero {
+img {
+  border: 2px solid var(--primary-color);
+}
+
+i {
+  color: var(--secondary-color);
+}
+
+.hero {
   background-color: var(--background-color);
   padding: 150px 10px 105px;
 }
@@ -102,6 +111,23 @@ div.hero {
   transition: 0.4s ease-in-out;
 }
 
+.secondary-link {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1.5px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.secondary-link:hover {
+  color: var(--secondary-color-dark);
+  border-color: var(--secondary-color-dark);
+  transition: 0.4s ease-in-out;
+}
+
 .tertiary-link {
   font-size: 18px;
   color: var(--secondary-color);
@@ -113,7 +139,7 @@ div.hero {
   text-decoration: underline;
 }
 
-div.link {
+.link {
   display: flex;
   justify-content: center;
 }
@@ -129,11 +155,7 @@ div.link {
   color: var(--secondary-color-dark);
 }
 
-i {
-  color: var(--secondary-color);
-}
-
-i.contact-icon {
+.contact-icon {
   font-size: 60px;
 }
 
@@ -147,13 +169,20 @@ i.contact-icon {
   text-decoration: underline;
 }
 
-img {
-  border: 2px solid var(--primary-color);
-}
-
 .body {
   display: block;
   padding: 0 10px;
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.about-image {
+  max-width: 336px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-hero {
+  background-color: var(--background-color);
+  padding: 50px 10px;
 }
