@@ -39,6 +39,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .about-icon {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .about-icon {
+    font-size: 60px;
+  }
+}
+
 body {
   font-family: var(--default-font-family);
 }
@@ -185,4 +197,28 @@ i {
 .about-hero {
   background-color: var(--background-color);
   padding: 50px 10px;
+}
+
+.about-body {
+  display: block;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.about-icon {
+  color: var(--primary-color-dark);
+}
+
+.about-paragraph {
+  background: var(--background-color);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+}
+
+.section-hr {
+  color: var(--primary-color-dark);
+  display: flex;
+  justify-content: center;
+  margin: auto 85px;
 }
