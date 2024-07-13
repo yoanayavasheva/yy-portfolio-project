@@ -1,15 +1,13 @@
 :root {
-  --background-color: rgb(255, 242, 244);
+  --primary-color-background: rgb(238, 249, 252);
+  --secondary-color-background: rgb(255, 242, 244);
 
   --primary-color: rgb(69, 143, 157);
-  --primary-color-light: rgb(185, 229, 238);
   --primary-color-dark: rgb(48, 97, 107);
 
-  --secondary-color: #e68379;
-  --secondary-color-light: #f7b2b0;
-  --secondary-color-dark: #ef5264;
-
-  --accent-color: #ec9c00;
+  --secondary-color-light: rgb(247, 178, 176);
+  --secondary-color: rgb(230, 131, 121);
+  --secondary-color-dark: rgb(239, 82, 100);
 
   --default-font-family: "Poppins";
   --header-font-family: "Lora";
@@ -96,7 +94,7 @@ h2.section-title {
 }
 
 img {
-  border: 2px solid var(--primary-color);
+  border: 1.5px solid var(--primary-color);
 }
 
 i {
@@ -104,7 +102,7 @@ i {
 }
 
 .hero {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color-background);
   padding: 150px 10px 105px;
 }
 
@@ -119,34 +117,21 @@ i {
 }
 
 .primary-link:hover {
-  background-color: var(--secondary-color-dark);
+  background: linear-gradient(
+    230deg,
+    var(--primary-color-dark) 29%,
+    var(--secondary-color-dark) 98%
+  );
   transition: 0.4s ease-in-out;
 }
 
 .secondary-link {
-  background-color: var(--background-color);
-  color: var(--primary-color);
-  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border: 1.5px solid var(--primary-color);
-  padding: 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.secondary-link:hover {
-  color: var(--secondary-color-dark);
-  border-color: var(--secondary-color-dark);
-  transition: 0.4s ease-in-out;
-}
-
-.tertiary-link {
   font-size: 18px;
   color: var(--secondary-color);
   text-decoration: none;
 }
 
-.tertiary-link:hover {
+.secondary-link:hover {
   transition: 0.4s ease-in-out;
   text-decoration: underline;
 }
@@ -169,6 +154,7 @@ i {
 
 .contact-icon {
   font-size: 60px;
+  color: var(--secondary-color-dark);
 }
 
 .contact-icon-link a {
@@ -195,7 +181,7 @@ i {
 }
 
 .about-hero {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color-background);
   padding: 50px 10px;
 }
 
@@ -211,7 +197,7 @@ i {
 }
 
 .about-paragraph {
-  background: var(--background-color);
+  background: var(--secondary-color-background);
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
@@ -221,4 +207,29 @@ i {
   display: flex;
   justify-content: center;
   margin: auto 85px;
+}
+
+.work-body {
+  background-color: var(--primary-color-background);
+}
+
+.work-link {
+  color: var(--secondary-color-dark);
+  text-decoration: none;
+}
+
+.work-link:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--secondary-color-background);
+  border: 1px solid var(--secondary-color-dark);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+}
+
+.work-body img {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
