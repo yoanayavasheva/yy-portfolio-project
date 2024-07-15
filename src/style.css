@@ -1,13 +1,10 @@
 :root {
-  --primary-color-background: rgb(238, 249, 252);
-  --secondary-color-background: rgb(255, 242, 244);
-
   --primary-color: rgb(69, 143, 157);
   --primary-color-dark: rgb(48, 97, 107);
 
-  --secondary-color-light: rgb(247, 178, 176);
   --secondary-color: rgb(230, 131, 121);
   --secondary-color-dark: rgb(239, 82, 100);
+  --secondary-color-background: rgb(255, 242, 244);
 
   --default-font-family: "Poppins";
   --header-font-family: "Lora";
@@ -18,8 +15,12 @@
     font-size: 90px;
   }
 
-  h2.homepage-regard {
-    font-size: 37px;
+  .section-hr {
+    margin: auto 80px;
+  }
+
+  .contact-page-heading {
+    font-size: 70px;
   }
 }
 
@@ -28,23 +29,23 @@
     font-size: 60px;
   }
 
-  h2.homepage-regard {
-    font-size: 30px;
+  .section-hr {
+    margin: auto 40px;
   }
 
-  h2 {
-    font-size: 20px;
+  .contact-page-heading {
+    font-size: 55px;
   }
 }
 
 @media (min-width: 768px) {
-  .about-icon {
+  .story-icon {
     font-size: 80px;
   }
 }
 
 @media (max-width: 767.9px) {
-  .about-icon {
+  .story-icon {
     font-size: 60px;
   }
 }
@@ -53,52 +54,37 @@ body {
   font-family: var(--default-font-family);
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
-h1,
-h3 {
-  font-family: var(--header-font-family);
-}
-
 h1 {
+  text-align: center;
+  font-family: var(--header-font-family);
   font-weight: 400;
   font-style: italic;
   line-height: 1;
 }
 
 h2 {
+  text-align: center;
   font-weight: 500;
   font-style: normal;
 }
 
 h3 {
+  font-family: var(--header-font-family);
   font-weight: 400;
   font-style: italic;
 }
 
 p {
   font-weight: 400;
-  font-size: 16px;
-  opacity: 90%;
+  font-style: normal;
 }
 
-h2.homepage-regard {
+a {
+  text-decoration: none;
 }
-
-h2.section-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-
 img {
   border: 1.5px solid var(--primary-color);
-}
-
-i {
-  color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
 
 .hero {
@@ -106,13 +92,18 @@ i {
   padding: 150px 10px 105px;
 }
 
+.primary-link-container {
+  display: flex;
+  justify-content: center;
+}
+
 .primary-link {
   background-color: var(--primary-color);
+  text-align: center;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 15px;
   border-radius: 5px;
-  text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -126,26 +117,16 @@ i {
 }
 
 .secondary-link {
-  font-size: 18px;
-  color: var(--secondary-color);
-  text-decoration: none;
+  color: var(--secondary-color-dark);
+}
+
+.secondary-link i {
+  color: var(--secondary-color-dark);
 }
 
 .secondary-link:hover {
-  transition: 0.4s ease-in-out;
   text-decoration: underline;
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-links {
-  display: block;
-  justify-content: center;
-  max-width: 600px;
-  text-decoration: none;
+  transition: 0.4s ease-in-out;
 }
 
 .hero-hr {
@@ -157,13 +138,12 @@ i {
   color: var(--secondary-color-dark);
 }
 
-.contact-icon-link a {
+.contact-link a {
   color: black;
-  text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-.contact-icon-link a:hover {
+.contact-link a:hover {
   text-decoration: underline;
 }
 
@@ -171,65 +151,48 @@ i {
   display: block;
   padding: 0 10px;
   margin: 0 auto;
-  max-width: 1000px;
-}
-
-.about-image {
-  max-width: 336px;
-  display: block;
-  margin: 0 auto;
-}
-
-.about-hero {
-  background-color: var(--secondary-color-background);
-  padding: 50px 10px;
-}
-
-.about-body {
-  display: block;
-  padding: 0 10px;
-  margin: 0 auto;
   max-width: 800px;
 }
 
-.about-icon {
+.portrait-image {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.story-icon {
   color: var(--primary-color-dark);
 }
 
-.about-paragraph {
+.story-card {
   background: var(--secondary-color-background);
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
 
 .section-hr {
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
-  margin: auto 85px;
-}
-
-.work-body {
-  background-color: var(--primary-color-background);
-}
-
-.work-link {
-  color: var(--secondary-color-dark);
-  text-decoration: none;
-}
-
-.work-link:hover {
-  text-decoration: underline;
 }
 
 .card {
   background-color: var(--secondary-color-background);
-  border: 1px solid var(--secondary-color-dark);
+  border: 1.5px solid var(--primary-color);
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
 
-.work-body img {
+.card img {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+}
+
+.enquiry-link {
+  font-size: 30px;
+  margin-left: 80px;
+  line-height: 30px;
+}
+
+.subtitle {
+  font-size: 23px;
 }
