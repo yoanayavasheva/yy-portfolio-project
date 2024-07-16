@@ -189,10 +189,37 @@ img {
 
 .enquiry-link {
   font-size: 30px;
-  margin-left: 80px;
   line-height: 30px;
 }
 
 .subtitle {
   font-size: 23px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+  line-height: 50px;
+}
+
+.logo {
+  line-height: 50px;
+  font-size: 20px;
+  text-align: start;
+  display: inline;
+  margin: 0;
+}
+
+nav a {
+  color: black;
+}
+
+.active {
+  color: var(--primary-color);
 }
